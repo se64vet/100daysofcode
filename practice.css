@@ -1,0 +1,91 @@
+body {
+    background: #60a9ff;
+    display: flex;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+html {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+#panel {
+    background: whitesmoke;
+    width: 60%;
+    /*---Box-shadow---*/
+    -webkit-box-shadow: -2px 4px 10px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 4px 10px -1px rgba(0,0,0,0.75);
+    box-shadow: -2px 4px 10px -1px rgba(0,0,0,0.75);
+    border-radius: .2em;
+    /*Display*/
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.panel-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    height: 100%;
+    margin: .1em;
+    padding: .1em;
+
+    font-size: .5em;
+    text-align: center;
+
+}
+.panel-items:nth-child(2) {
+    border-left: 0.5px solid lightgray ;
+    border-right:.5px solid lightgray ;
+}
+
+.panel-items img {
+    width: 30%;
+}
+
+.panel-items .title {
+    color: lightslategrey;
+    margin:1em 0 ;
+    font-weight: 600;
+}
+
+.panel-items .description {
+    color: rgb(24, 165, 253);
+    font-size: .6em;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 70%;
+    margin: .6em 0;
+}
+
+.panel-items .pricing {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: mediumblue;
+    margin: .6em 0;
+}
+
+.panel-items .call-to-action-btn {
+    font-size: .7em;
+    text-transform: uppercase;
+    padding: 0 .4em;
+    margin: .6em 0;
+    color: rgb(24, 165, 253);
+    border: .1em solid lightgray;
+    border-radius: .3em;
+    transition: .2s ease-out;
+    
+}
+.panel-items .call-to-action-btn:hover {
+    color: white;
+    border: .1em solid rgb(24, 165, 253);
+    background:rgb(24, 165, 253);
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
